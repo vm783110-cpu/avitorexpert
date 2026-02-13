@@ -56,10 +56,15 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:42px;
-    font-weight:bold;
-    color:#00ffb2;
     box-shadow:0 0 20px rgba(0,255,180,.6);
+    overflow:hidden;
+}
+
+.logo img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    border-radius:50%;
 }
 
 h1{
@@ -121,12 +126,6 @@ h1{
     animation:blink 1s infinite;
 }
 
-@keyframes blink{
-    0%{opacity:1;}
-    50%{opacity:.45;}
-    100%{opacity:1;}
-}
-
 .secondary{
     display:block;
     text-decoration:none;
@@ -136,6 +135,12 @@ h1{
     color:#000;
     font-weight:bold;
     font-size:17px;
+}
+
+@keyframes blink{
+    0%{opacity:1;}
+    50%{opacity:.45;}
+    100%{opacity:1;}
 }
 
 .features{
@@ -162,13 +167,9 @@ h1{
 
 <div class="main">
 
-    <!-- TOP 2 IMAGES -->
-    <div style="display:flex;gap:10px;justify-content:center;margin-bottom:12px;">
-        <img src="top1.jpg" style="width:48%;border-radius:12px;">
-        <img src="top2.jpg" style="width:48%;border-radius:12px;">
+    <div class="logo">
+        <img src="aviator-logo.png" alt="Aviator Logo">
     </div>
-
-    <div class="logo">✈️</div>
 
     <h1>Aviator Casino</h1>
     <div class="tag">Premium Aviator & Casino Prediction Zone</div>
@@ -195,13 +196,13 @@ h1{
     </div>
 
     <!-- MAIN JOIN BUTTON -->
-    <a class="cta" href="YOUR_JOIN_LINK_HERE" target="_blank">
+    <a class="cta" href="https://t.me/+80KFWk2soCk0Nzhl" target="_blank">
         🎯 Join Aviator VIP Channel
     </a>
 
-    <!-- REQUEST (PRIVATE) BUTTON -->
+    <!-- REQUEST BUTTON -->
     <a class="secondary" href="https://t.me/+80KFWk2soCk0Nzhl" target="_blank">
-        💬 Get VIP Access Now
+        💬 Send Join Request
     </a>
 
     <div class="features">
